@@ -14,7 +14,9 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 
 
@@ -22,7 +24,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <nav class="navbar">
             <div class="container-menu">
                 <div class="logo">
@@ -42,8 +44,8 @@
                 </button>
 
                 <ul class="navbar-menu">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
                     <li><a href="#">Cardápio</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contato</a></li>
@@ -61,6 +63,22 @@
             </div>
         </section>
     </header>
+
+    <main>
+        <section class="sobre" id="sobre">
+            <h1>Sobre Nós</h1>
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <p>Acreditamos que um bom café transforma momentos. Nosso compromisso é oferecer cafés de alta qualidade, que unem tradição, inovação e proficiência para levar até você a melhor experiência em cada xícara.</p>
+                    <p>Seja para um espresso intenso ou um café filtrado suave, nossos produtos são pensados para atender todos os gostos, sempre com qualidade e estilo. Mais do que uma xícara, queremos ser parte da sua rotina, tornando cada café especial.</p>
+                    <p>Venha descobrir o sabor da perfeição com a KofCoffee!</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="assets/img/sobre.jpeg" alt="Café sendo servido">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>
