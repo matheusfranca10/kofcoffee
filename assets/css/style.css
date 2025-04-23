@@ -1,3 +1,15 @@
+:root {
+    --cor-bg: #4C3527;
+    --cor-bg2: #684f36;
+    --cor-primaria: #ede6d9;
+    --cor-secundaria: #b39977;
+
+    --font-primaria: "Poppins", Arial, sans-serif;
+    --font-secundaria: "Josefin Sans", sans-serif;
+    --font-terciaria: "Great Vibes", cursive;
+
+}
+
 
 * {
     padding: 0;
@@ -9,7 +21,7 @@
 
 .navbar {
     background-color: #09070A;
-    color: #fff;
+    color: var(--cor-primaria);
     padding: 0.70rem;
     position: relative; 
 }
@@ -30,7 +42,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #fff;
+    color: var(--cor-primaria);
     font-family: inherit;
 }
 
@@ -44,7 +56,7 @@
 .texto-logo strong {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #ede6d9;
+    color: var(--cor-primaria);
 }
 
 .texto-logo small {
@@ -84,11 +96,11 @@
 
 .navbar-menu a {
     padding: 8px;
-    color: #ede6d9;
+    color: var(--cor-primaria);
     font-size: 0.80rem;
     font-weight: 400;
     transition: color 0.3s ease;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: var(--font-primaria);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -99,7 +111,7 @@
 }
 
 .navbar-menu a:hover {
-    color: #b39977;
+    color: var(--cor-secundaria);
 }
 
 
@@ -111,7 +123,7 @@
 .menu-toggle {
     background: none;
     border: none;
-    color: #ede6d9;
+    color: var(--cor-primaria);
     font-size: 1.5rem;
     cursor: pointer;
     display: block;
@@ -124,7 +136,7 @@
     width: 24px;
     height: 2px;
     margin: 5px 9px 5px 0px;
-    background-color: #ede6d9;
+    background-color: var(--cor-primaria);
     transition: all 0.3s ease;
 }
 
@@ -182,7 +194,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--cor-primaria);
     margin-top: 9rem;
     max-width: 100%;
     overflow-x: hidden;
@@ -198,7 +210,7 @@ header {
 .welcome h1 {
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Great Vibes", cursive;
+    font-family: var(--font-terciaria);
     font-weight: 400;
 }
 
@@ -206,28 +218,30 @@ header {
     display: block;
     font-size: 3rem;
     padding: 30px 0;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: var(--font-secundaria);
     font-weight: 700;
     letter-spacing: 2px;
-    color: #b39977;
+    color: var(--cor-secundaria);
 }
 
 .welcome p {
     font-size: 0.8rem;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: var(--font-primaria);
     font-weight: 400;
     margin-bottom: 2rem;
 }
 
 .btn-visitar {
     display: inline-block;
-    background-color: #b39977;
-    color: #fff;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
     padding: 12px 30px;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s;
-    border: 2px solid #b39977;
+    border: 2px solid var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 0.8rem;
 }
 
 .btn-visitar:hover {
@@ -254,8 +268,8 @@ header {
 
 
 .sobre {
-    background-color: #4C3527;
-    padding: 80px 0;
+    background-color: var(--cor-bg);
+    padding: 80px 0 0 0;
     position: relative;
     overflow: hidden;
 }
@@ -281,27 +295,27 @@ header {
     flex-direction: column;
     position: relative;
     z-index: 1;
-    background-color: #684f36;
+    background-color: var(--cor-bg2);
 }
 
 .sobre-texto {
     order: 2;
     padding: 30px 20px;
-    color: #ede6d9;
+    color: var(--cor-primaria);
     text-align: start;
 }
 
 .sobre h1 {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 2.5rem;
-    color: #b39977;
+    color: var(--cor-secundaria);
     margin-bottom: 20px;
     text-align: start;
     padding-left: 20px;
 }
 
 .sobre-texto p {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-primaria);
     line-height: 1.8;
     margin-bottom: 15px;
 }
@@ -398,3 +412,175 @@ header {
         text-align: center;
     }
 }
+
+
+
+
+
+
+/* Cardápio */
+
+.cardapio {
+    background: url(../img/bg_4.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 40px 20px;
+    overflow: hidden;
+    color: var(--cor-primaria);
+}
+
+.cardapio h1 {
+    font-family: var(--font-secundaria);
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cardapio h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--cor-secundaria);
+}
+
+.cardapio-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px 0 0 0;
+}
+
+.item {
+    margin: 0 auto;
+}
+
+.item-img {
+    height: 150px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-texto {
+    font-family: var(--font-primaria);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.ver-cardapio {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ver-cardapio a {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.item:nth-child(n+7) {
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 374px) {
+    .item:nth-child(n+5) {
+        display: none;
+    }
+
+    .cardapio-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+@media (min-width: 480px) {
+    .ver-cardapio a {
+        padding: 12px 30px;
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (min-width: 680px) {
+    .item:nth-child(n+7) {
+        display: block;
+    }
+    
+    .cardapio-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding-top: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .cardapio {
+        padding: 80px 0;
+        background-attachment: fixed;
+    }
+    
+    .cardapio h1 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    .cardapio-container {
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        padding-top: 40px;
+    }
+    
+    .item-img {
+        height: 200px;
+    }
+    
+
+    .item-img img {
+        transition: transform 0.5s ease;
+    }
+    
+    .item:hover .item-img img {
+        transform: scale(1.05);
+    }
+
+    .ver-cardapio {
+        margin-top: 50px;
+    }
+    
+    .ver-cardapio a {
+        transition: all 0.3s;
+    }
+    
+    .ver-cardapio a:hover {
+        background-color: transparent;
+        color: var(--cor-secundaria);
+    }
+}
+
