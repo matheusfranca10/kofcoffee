@@ -836,7 +836,6 @@ header {
 }
 
 
-
 .info-item {
     display: flex;
     flex-direction: column;
@@ -873,6 +872,18 @@ header {
 .info-item a:hover .fas {
     transform: scale(1.2);
 }
+
+.info-item a[href*="maps"] {
+    white-space: normal; 
+    max-width: 100%; 
+    word-break: break-word; 
+    align-items: flex-start; 
+}
+
+.info-item a[href*="maps"] i {
+    margin-top: 3px;
+}
+
 
 .horario {
     font-family: var(--font-primaria);
@@ -927,9 +938,16 @@ header {
     .info-item {
         gap: 5px;
         padding-bottom: 30px;
+        margin-bottom: 0;
     }
 }
 
+
+@media (max-width: 960px) {
+    .contato-info {
+        margin-left: 30px;
+    }
+}
 
 @media (max-width: 390px) {
 
