@@ -911,6 +911,8 @@ header {
 @media (min-width: 768px) {
     .contato {
         padding: 80px 20px;
+        background-attachment: fixed;
+
     }
     
     .contato h1 {
