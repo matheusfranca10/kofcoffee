@@ -1100,7 +1100,7 @@ header {
 
     .curiosidades::before {
         width: 40%;
-        height: 70%;
+        height: 60%;
     }
     
     .curiosidades h1 {
@@ -1191,6 +1191,7 @@ header {
     }
     
 }
+
 
 @media (max-width: 590px) {
     .curiosidades::before {
