@@ -238,7 +238,7 @@ header {
     justify-content: center;
     text-align: center;
     color: var(--cor-primaria);
-    margin-top: 9rem;
+    margin-top: 12rem;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -295,7 +295,7 @@ header {
 
 @media (min-width: 992px) {
     .welcome {
-        margin-top: 8rem;
+        margin-top: 13rem;
     }
 
     .welcome p {
