@@ -1232,3 +1232,21 @@ header {
     }
 }
 
+
+
+
+/* Footer */
+
+footer {
+    background-color: #342519;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container p {
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
