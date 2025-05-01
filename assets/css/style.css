@@ -19,23 +19,23 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 .navbar {
     position: fixed;
     top: 0;
-    left: 0; 
-    width: 100vw; 
-    z-index: 1000; 
-    background-color: black; 
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background-color: black;
     transition: all 0.3s ease;
-    padding: 0.70rem 0; 
+    padding: 0.70rem 0;
 }
 
 .navbar.scrolled {
     background-color: #09070A !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -96,14 +96,14 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
-    position: absolute; 
-    top: 100%; 
+    position: absolute;
+    top: 100%;
     left: 0;
     background-color: #09070A;
     z-index: 1000;
     padding: 20px 0;
     margin-top: 0;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.3s ease;
@@ -184,8 +184,8 @@ html {
 @media (min-width: 992px) {
     .navbar {
         background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
-    } 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
     .navbar-menu {
         display: flex !important;
@@ -193,10 +193,10 @@ html {
         gap: 2rem;
         margin-top: 0;
         width: auto;
-        position: static; 
-        height: auto; 
+        position: static;
+        height: auto;
         background-color: transparent;
-        opacity: 1; 
+        opacity: 1;
         background-color: transparent;
     }
 
@@ -376,7 +376,7 @@ header {
     object-fit: cover;
     border-radius: 5px;
     display: block;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -384,12 +384,12 @@ header {
     .sobre {
         padding: 80px 0;
     }
-    
+
     .sobre::before {
         width: 70%;
         height: 100%;
     }
-    
+
     .sobre-container {
         max-width: 800px;
         min-height: 400px;
@@ -398,7 +398,7 @@ header {
         align-items: stretch;
         border: 2px solid black;
     }
-    
+
     .sobre-texto {
         flex: 1;
         order: initial;
@@ -406,12 +406,12 @@ header {
         padding-right: 40px;
         text-align: center;
     }
-    
+
     .sobre h1 {
         text-align: center;
         padding-left: 0;
     }
-    
+
     .sobre-imagem {
         flex: 0 1 320px;
         order: initial;
@@ -420,7 +420,7 @@ header {
         align-self: stretch;
         height: 100%;
     }
-    
+
     .sobre-imagem img {
         max-width: 100%;
         height: 100%;
@@ -448,7 +448,7 @@ header {
     }
 
     .sobre::before {
-       display: none;
+        display: none;
     }
 
     .sobre h1 {
@@ -580,7 +580,7 @@ header {
     .item:nth-child(n+7) {
         display: block;
     }
-    
+
     .cardapio-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 20px;
@@ -594,7 +594,7 @@ header {
         padding: 80px 0;
         background-attachment: fixed;
     }
-    
+
     .cardapio h1 {
         margin-bottom: 50px;
     }
@@ -605,16 +605,16 @@ header {
         gap: 30px;
         padding-top: 40px;
     }
-    
+
     .item-img {
         height: 200px;
     }
-    
+
 
     .item-img img {
         transition: transform 0.5s ease;
     }
-    
+
     .item:hover .item-img img {
         transform: scale(1.05);
     }
@@ -622,11 +622,11 @@ header {
     .ver-cardapio {
         margin-top: 50px;
     }
-    
+
     .ver-cardapio a {
         transition: all 0.3s;
     }
-    
+
     .ver-cardapio a:hover {
         background-color: transparent;
         color: var(--cor-secundaria);
@@ -687,7 +687,7 @@ header {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     text-align: left;
     display: flex;
@@ -724,11 +724,11 @@ header {
 
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .depoimentos {
         padding: 80px 0 40px 0;
     }
-    
+
     .depoimentos::before {
         width: 70%;
         height: 100%;
@@ -757,7 +757,7 @@ header {
 
     .card-depoimento:hover {
         transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
     .texto-depoimento {
@@ -803,7 +803,7 @@ header {
     }
 
     .depoimentos::before {
-       display: none;
+        display: none;
     }
 
     .depoimentos h1 {
@@ -861,7 +861,7 @@ header {
     height: 250px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .contato-mapa iframe {
@@ -901,7 +901,7 @@ header {
     transform: translateX(5px);
 }
 
-.info-item .fab, 
+.info-item .fab,
 .info-item .fas {
     font-size: 1.2rem;
     color: var(--cor-secundaria);
@@ -916,10 +916,10 @@ header {
 }
 
 .info-item a[href*="maps"] {
-    white-space: normal; 
-    max-width: 100%; 
-    word-break: break-word; 
-    align-items: flex-start; 
+    white-space: normal;
+    max-width: 100%;
+    word-break: break-word;
+    align-items: flex-start;
 }
 
 .info-item a[href*="maps"] i {
@@ -956,29 +956,29 @@ header {
         background-attachment: fixed;
 
     }
-    
+
     .contato h1 {
         margin-bottom: 40px;
     }
-    
+
     .contato-container {
         flex-direction: row;
         gap: 40px;
     }
-    
+
     .contato-mapa {
         order: 1;
         flex: 1;
         height: 300px;
         margin-top: 0;
     }
-    
+
     .contato-info {
         order: 2;
         flex: 1;
         margin-left: 80px;
     }
-    
+
     .info-item {
         gap: 5px;
         padding-bottom: 30px;
@@ -1094,7 +1094,7 @@ header {
     background: var(--cor-bg2);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     margin-left: 40px;
     width: 70%;
 }
@@ -1118,7 +1118,7 @@ header {
     padding: 25px 20px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .beneficio-card i {
@@ -1148,7 +1148,7 @@ header {
         width: 40%;
         height: 50%;
     }
-    
+
     .curiosidades h1 {
         margin-bottom: 60px;
         text-align: center;
@@ -1196,7 +1196,7 @@ header {
         margin-left: 10%;
     }
 
-    
+
     .conteudo h2 {
         color: var(--cor-secundaria);
         font-family: var(--font-secundaria);
@@ -1210,32 +1210,32 @@ header {
         max-width: 1000px;
         margin: 0 auto;
     }
-    
+
     .beneficio-card {
         background: var(--cor-bg2);
         padding: 30px;
         border-radius: 8px;
         text-align: center;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
     }
-    
+
     .beneficio-card:hover {
         transform: translateY(-10px);
     }
-    
+
     .beneficio-card i {
         font-size: 2.5rem;
         color: var(--cor-secundaria);
         margin-bottom: 20px;
     }
-    
+
     .beneficio-card h2 {
         color: var(--cor-secundaria);
         font-family: var(--font-secundaria);
         margin-bottom: 15px;
     }
-    
+
 }
 
 
@@ -1266,7 +1266,7 @@ header {
 @media (max-width: 300px) {
 
     .curiosidades::before {
-       display: none;
+        display: none;
     }
 
     .curiosidades h1 {
@@ -1291,4 +1291,37 @@ footer {
     font-size: 0.9rem;
     line-height: 1.6;
     margin: 0;
+}
+
+
+
+
+
+
+
+/* ANIMAÇÕES PARA ITENS */
+[data-anime] {
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+[data-anime="left"] {
+    transform: translateX(-50px);
+}
+
+[data-anime="right"] {
+    transform: translateX(50px);
+}
+
+[data-anime="top"] {
+    transform: translateY(-50px);
+}
+
+[data-anime="bottom"] {
+    transform: translateY(50px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate(0, 0) !important;
 }
