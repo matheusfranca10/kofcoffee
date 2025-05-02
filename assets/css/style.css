@@ -393,6 +393,7 @@ header {
     .sobre-container {
         max-width: 800px;
         min-height: 400px;
+        max-height: 480px;
         padding: 0 0 0 20px;
         flex-direction: row;
         align-items: stretch;
