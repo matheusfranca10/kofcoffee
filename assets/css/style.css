@@ -502,6 +502,7 @@ header {
 
 .item {
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .item-img {
