@@ -1140,6 +1140,11 @@ header {
     font-size: .8rem;
 }
 
+.quebrar-palavra {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
 
 @media (min-width: 768px) {
     .curiosidades {
@@ -1240,8 +1245,6 @@ header {
 
     .beneficio-card p {
         font-size: 1rem;
-        overflow-wrap: break-word;
-        hyphens: auto;
     }
 
 }
