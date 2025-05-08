@@ -42,7 +42,7 @@ window.addEventListener('scroll', () => {
 // ANIMAÇÃO PARA ITENS (Scroll + Delay)
 function animateItems() {
     const items = document.querySelectorAll('[data-anime]');
-    const windowHeight = window.innerHeight * 0.95;
+    const windowHeight = window.innerHeight * 0.98;
 
     items.forEach((item, index) => {
         const itemTop = item.getBoundingClientRect().top;
